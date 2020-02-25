@@ -1,0 +1,9 @@
+E:\Учеба\Семестр 9\Математическое моделирование\мое\KR1\kr1\kr1\bin\Debug\kr1.exe.config
+E:\Учеба\Семестр 9\Математическое моделирование\мое\KR1\kr1\kr1\bin\Debug\kr1.exe
+E:\Учеба\Семестр 9\Математическое моделирование\мое\KR1\kr1\kr1\bin\Debug\kr1.pdb
+E:\Учеба\Семестр 9\Математическое моделирование\мое\KR1\kr1\kr1\obj\Debug\kr1.csprojAssemblyReference.cache
+E:\Учеба\Семестр 9\Математическое моделирование\мое\KR1\kr1\kr1\obj\Debug\kr1.Properties.Resources.resources
+E:\Учеба\Семестр 9\Математическое моделирование\мое\KR1\kr1\kr1\obj\Debug\kr1.csproj.GenerateResource.cache
+E:\Учеба\Семестр 9\Математическое моделирование\мое\KR1\kr1\kr1\obj\Debug\kr1.exe
+E:\Учеба\Семестр 9\Математическое моделирование\мое\KR1\kr1\kr1\obj\Debug\kr1.pdb
+E:\Учеба\Семестр 9\Математическое моделирование\мое\KR1\kr1\kr1\obj\Debug\kr1.Form1.resources
