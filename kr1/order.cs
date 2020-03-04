@@ -9,12 +9,14 @@ namespace kr1
     public class Order
     {
         double queryTime;
+        double primordialQueryTime;
         double completeTime;
 
         public Order(double qtime,double ctime)
         {
             queryTime = qtime;
             completeTime = ctime;
+            primordialQueryTime = qtime;
         }
 
         public double getQueryTime()
@@ -25,6 +27,11 @@ namespace kr1
         public double getCompleteTime()
         {
             return this.completeTime;
+        }
+
+        public double getPrimordialQueryTime()
+        {
+            return this.primordialQueryTime;
         }
 
         public void decTime(double T) 

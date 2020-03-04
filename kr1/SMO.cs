@@ -12,13 +12,25 @@ namespace kr1
         protected int kanal_quality;
         protected int query_quality;
         protected List<Chanel> SMO =new List<Chanel>();
-
-
+        
         public smo()
         {
            
         }
 
+        public int AverageBusyCanals()
+        {
+            int result=0;
+            foreach(Chanel c in SMO)
+            {
+                if (c.getProgressSize() > 0)
+                {
+                    result += c.getProgressSize();
+                }
+            }
+
+            return result;
+        }
         public smo(int _k,int _q)
         {
             kanal_quality = _k;
@@ -53,6 +65,8 @@ namespace kr1
             {
                 if (SMO[i].addOrderToProgress(order))
                 {
+                    Form1.counter_time_in_smo1++;
+                    Form1.average_time_in_SMO1 += order.getCompleteTime();
                     success = true;
                     return success;             
                 }
@@ -66,7 +80,7 @@ namespace kr1
                     return success;
                 }
                 else if (SMO[j].getQuerySize() < query_quality)
-                {
+                {                  
                     SMO[j].addOrderToQuery(order);
                     success = true;
                     return success;
@@ -75,6 +89,32 @@ namespace kr1
 
 
             return success;
+        }
+
+        public virtual int OrdersInSMO()
+        {
+            int result = 0;
+            foreach (Chanel c in SMO)
+            {
+                if (c.getProgressSize() > 0)
+                {
+                    result += c.getProgressSize();
+                }
+            }
+            return result;
+        }
+
+        public virtual int OrdersInQuery()
+        {
+            int result = 0;
+            foreach (Chanel c in SMO)
+            {
+                if (c.getQuerySize() > 0)
+                {
+                    result += c.getQuerySize();
+                }
+            }
+            return result;
         }
 
         public virtual void dec(double T) 
